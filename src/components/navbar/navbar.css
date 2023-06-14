@@ -1,0 +1,30 @@
+.Navbar{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    font-family: "poppins" sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    /* border: solid 2px red; */
+   
+}
+.image{
+    margin-right: 300px;
+    margin-left: 100px;
+    width: 26%;
+}
+.nav-link{
+    margin-right: 50px;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 14%;
+    /* margin-bottom: 5px; */
+}
