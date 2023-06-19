@@ -1,0 +1,13 @@
+.container{
+    background-color: #EBD96B;
+    height: 87.2vh;
+    display: flex;
+}
+.yellow-girl{
+    /* height: 968px; */
+    width: 500px;
+    left: -4px;
+    top: 2491px;
+    border-radius: 0px;
+
+}

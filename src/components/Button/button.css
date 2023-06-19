@@ -1,0 +1,17 @@
+.primary-button{
+    height: 38.95000076293945px;
+    width: 104.9749984741211px;
+    left: 0px;
+    top: 0px;
+    border-radius: 4.75px;
+    background-color: black;
+    color: white;
+}
+.secondary-button{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 4.75px;
+}

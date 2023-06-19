@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../Assets/Images/logo.png"
 import "../navbar/navbar.css"
 import { Link } from 'react-router-dom'
+// import SecondaryButton from '../Button/secondary'
 
 const Navbar = () => {
   return (
@@ -15,7 +16,8 @@ const Navbar = () => {
                 <li className='nav-link'>FAVOURITE</li>
                 <li className='nav-link'>LIFESTYLE</li>
                 <li className='nav-link'>
-                    <Link className='nav-link bt' to="/signup">SIGN UP</Link>
+                    <Link className='nav-link btn' to="/signup">SIGN UP</Link>
+                    {/* <SecondaryButton parent="SIGN UP"/> */}
                 </li>
                 
             </ul>

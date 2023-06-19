@@ -9,7 +9,7 @@
 .img{
     position: absolute;
     width: 422px;
-    height: 4003px;
+    height: 400px;
     left: 623px;
     top: 106px;
 }
@@ -31,8 +31,13 @@
 }
 .let{
     background-color: white;
-    padding: 2px;
+    padding: 1px;
     padding-right: 70px;
+}
+.unique{
+    background-color:  #EBD96B;
+    padding: 2px;
+    padding-right: 60px;
 }
 .text2{
     font-family: "Poppins" sans-serif;
@@ -42,7 +47,7 @@
     letter-spacing: -0.05em;
     text-align: left;
 }
-.shop-btn{
+/* .shop-btn{
     height: 38.95000076293945px;
     width: 104.9749984741211px;
     left: 0px;
@@ -50,7 +55,7 @@
     border-radius: 4.75px;
     background-color: black;
     color: white;
-}
+} */
 .rectangle{
     height: 109px;
     width: 13548x;
@@ -63,4 +68,23 @@
 .logos{
     width: 80%;
     margin-left: 150px;
+}
+@media screen and (min-width: 200px) and (max-width:868px) {
+    .main-box{
+        width: 100%;
+        margin-left: 0;
+        padding-top: 2%;
+        display: block;
+        border-radius: 3%;
+    }
+    .img{
+        display: none;
+    }
+    .rectangle{
+        height: 100%;
+    }
+    .logos{
+        width: 80%;
+        margin-left: 10%;
+    }
 }
