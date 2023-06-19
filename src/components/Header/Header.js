@@ -5,6 +5,7 @@ import logos from "../Assets/Images/logos.png"
 import PrimaryButton from '../Button/primary'
 
 const Header = () => {
+  
   return (
     <div>
         <div className='main-box'>
@@ -13,7 +14,6 @@ const Header = () => {
                 <p className='text2'>Live for Influencial and Innovative fashion!</p>
 
                 <PrimaryButton children="SHOP NOW"/>
-                {/* <button className='shop-btn'>SHOP NOW</button> */}
            </div>
            <div>
                 <img className='img' src={girl} alt="" />

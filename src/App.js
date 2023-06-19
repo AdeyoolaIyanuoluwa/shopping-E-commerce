@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Navbar from './components/navbar/Navbar';
 import Signup from './components/Signup/Signup';
+import Login from './components/Login/login';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
             {/* <Header/> */}
             <Routes>
                   <Route path='/' element={<Header/>}/>
-                  <Route path='signup' element={<Signup/>} />
+                  <Route path='signup' element={<Signup/>}/>
+                  <Route path='login' element={<Login/>}/>
             </Routes>
         </Router>
     </div>
