@@ -1,0 +1,28 @@
+.products-mainbox{
+    margin-left: 100px;
+    margin-right: 140px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.products-text{
+    font-family: "Poppins" sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 50px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+.products{
+    width: 284px;
+    height: 408px;
+    border: thin solid red;
+    background-color: blue;
+}
+.product-image{
+    width: 484px;
+    height: 304px;
+}
+

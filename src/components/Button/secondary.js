@@ -1,10 +1,10 @@
 import React from 'react'
 import "../Button/button.css"
 
-const SecondaryButton = ({parent}) => {
+const SecondaryButton = ({parent,addtocart,}) => {
   return (
     <div>
-        <button className='secondary-button'>{parent}</button>
+        <button onClick={addtocart} className='secondary-button'>{parent}</button>
     </div>
   )
 }
