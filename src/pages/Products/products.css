@@ -1,6 +1,10 @@
+/* body{
+    background-color: #EBD96B;
+} */
 .products-mainbox{
     margin-left: 100px;
     margin-right: 140px;
+    
 }
 .cart-box{
     display: flex;
@@ -36,19 +40,28 @@
 }
 .products{
     width: 224px;
-    height: 408px;
-    border: thin solid red;
+    height: 448px;
+    /* border: thin solid red; */
 }
 .product-image{
     width: 224px;
-    height: 304px;
-    border: thin solid blue;
+    height: 326px;
+    /* border: thin solid blue; */
+}
+.images{
+    width: 224px;
+    /* height: 304px; */
 }
 .product-name{
     font-family: "Poppins" sans-serif;
     font-size: 15px;
     font-weight: 650;
     padding-left: 7px;
+}
+.product-amount{
+    font-family: "Poppins" sans-serif;
+    font-size: 15px;
+    font-weight: 630;
 }
 .addtocart{
     padding: 7px;

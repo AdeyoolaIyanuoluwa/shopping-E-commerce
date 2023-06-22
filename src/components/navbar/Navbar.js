@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../Assets/Images/logo.png"
 import "../navbar/navbar.css"
 import { Link } from 'react-router-dom'
-import PrimaryButton from '../Button/primary'
+// import PrimaryButton from '../Button/primary'
 // import SecondaryButton from '../Button/secondary'
 
 const Navbar = () => {

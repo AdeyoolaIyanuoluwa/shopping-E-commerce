@@ -1,56 +1,60 @@
+import img1 from "../components/Assets/Images/IMG1.png"
+import img2 from "../components/Assets/Images/IMG2.png"
+import img3 from "../components/Assets/Images/IMG3.png"
+
 export const ProductData= [
             {
                id:1,
-               imageUrl: "",
+               imageUrl: img1,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:2,
-               imageUrl: "",
+               imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:3,
-               imageUrl: "",
+               imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:4,
-               imageUrl: "",
+               imageUrl: img1,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:5,
-               imageUrl: "",
+               imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:6,
-               imageUrl: "",
+               imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:7,
-               imageUrl: "",
+               imageUrl: img1,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 
             },
             {
                id:8,
-               imageUrl: "",
+               imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: "20000"
 

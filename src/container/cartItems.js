@@ -9,7 +9,7 @@ const CartItems = () => {
   return (
     <div>
         <span><AiOutlineShoppingCart /></span>
-        <span>Cart {state.count}</span>
+        <span>Cart 0</span>
     </div>
   )
 }

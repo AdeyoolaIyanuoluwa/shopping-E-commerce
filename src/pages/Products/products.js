@@ -3,6 +3,8 @@ import { ProductData } from '../../Mockdata/productData'
 import "../Products/products.css"
 import SecondaryButton from '../../components/Button/secondary';
 import CartItems from '../../container/cartItems';
+import { CartReducer } from '../../container/cartReducers';
+
 
 const Products = () => {
   console.log(ProductData);
@@ -18,16 +20,20 @@ const Products = () => {
             {ProductData.map((product, i)=>(
               <>
                     <div key={i} className='products'>
-                      <div className='product-image'></div>
-                      <div>
+                      <div className='product-image'><img className='images' src={product.imageUrl} alt="" /></div>
+                     <div className='text-div'>
+
+                     <div>
                         <p className='product-name'>{product.productName}</p>
                       </div>
                       <div className='addtocart'> 
-                        <span>{product.amount}</span>
-                        
-                          <SecondaryButton addtocart={addtocart} parent="Add to Cart"/>
+                        <span className='product-amount'>${product.amount}</span>
+                    
+                          {/* <SecondaryButton addtocart={()=>dispatch({type: "ADD_TO_CART"})} parent="Add to Cart"/> */}
+                          <SecondaryButton  parent="Add to Cart"/>
                           
                       </div>
+                     </div>
                     </div>
                     
               </>
