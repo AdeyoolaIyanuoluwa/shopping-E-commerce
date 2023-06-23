@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
@@ -6,13 +5,15 @@ import Navbar from './components/navbar/Navbar';
 import Signup from './components/Signup/Signup';
 import Login from './components/Login/login';
 import Products from './pages/Products/products';
+import { CartProvider } from './container/cartContext';
 
 function App() {
   return (
     <div>
+    <CartProvider>
+      
         <Router>
             <Navbar/>
-            {/* <Header/> */}
             <Routes>
                   <Route path='/' element={<Header/>}/>
                   <Route path='signup' element={<Signup/>}/>
@@ -20,6 +21,7 @@ function App() {
                   <Route path='products' element={<Products/>}/>
             </Routes>
         </Router>
+        </CartProvider>
     </div>
   );
 }
