@@ -10,16 +10,19 @@ const Products = () => {
     <div className='products-mainbox'>
             <div className='cart-box'>
                 <h1 className='products-text'>NEW ARRIVALS</h1>
-               
+                
             </div>
+
         <div className='products-container'>
             {ProductData.map((product, i)=>(  
                 <EachProduct key={i} product={product}/>
             ))}
-          </div>
+        </div>
+
           <div className='cart'> 
                  <CartItems/>
-                    </div>   
+          </div>                                
+            
     </div>
   )
 }

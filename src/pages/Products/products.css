@@ -13,7 +13,7 @@
     font-family: "Poppins" sans-serif;
     /* border: thin solid black; */
 }
-.cart{
+/* .cart{
     font-size: 30px;
     font-weight: 650;
     text-align: center;
@@ -22,7 +22,7 @@
     width: 140px;
     height: 50px;
     border-radius: 20.75px;
-}
+} */
 .products-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
