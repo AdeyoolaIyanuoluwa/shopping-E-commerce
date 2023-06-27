@@ -6,10 +6,11 @@ const Cart = () => {
 const {products, total} = useContext(CartContext)
   return (
     <div>
+        <span>Total: ${total}</span>
+        
         {products.map((cartitems, i)=>
         <>
-            <span>Total: ${total}</span>
-            <CartProduct  key={i} product={cartitems}/>
+            <CartProduct key={i} product={cartitems} classname="cart"/>
             
           </>
         )}

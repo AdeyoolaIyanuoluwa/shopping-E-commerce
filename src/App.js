@@ -6,7 +6,7 @@ import Signup from './components/Signup/Signup';
 import Login from './components/Login/login';
 import Products from './pages/Products/products';
 import { CartProvider } from './container/cartContext';
-import CartItems from './container/cartItems';
+import Cart from './pages/Products/cart';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
                   <Route path='signup' element={<Signup/>}/>
                   <Route path='login' element={<Login/>}/>
                   <Route path='products' element={<Products/>}/>
-                  <Route path='cart' element={<CartItems/>}/>
+                  <Route path='cart' element={<Cart/>}/>
             </Routes>
         </Router>
         </CartProvider>

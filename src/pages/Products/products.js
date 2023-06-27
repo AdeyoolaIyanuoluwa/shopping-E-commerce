@@ -10,7 +10,9 @@ const Products = () => {
     <div className='products-mainbox'>
             <div className='cart-box'>
                 <h1 className='products-text'>NEW ARRIVALS</h1>
-                
+                <div className='cart'> 
+                 <CartItems/>
+             </div>     
             </div>
 
         <div className='products-container'>
@@ -19,9 +21,7 @@ const Products = () => {
             ))}
         </div>
 
-          <div className='cart'> 
-                 <CartItems/>
-          </div>                                
+                                    
             
     </div>
   )

@@ -1,14 +1,11 @@
-import React, { useContext  } from 'react'
+import React from 'react'
 import { AiOutlineShoppingCart } from "react-icons/ai";
-// import { CartContext } from './cartContext';
-// import  from '../pages/Products/cartProduct';
-import Cart from '../pages/Products/cart';
+import { useNavigate } from 'react-router-dom';
 
 const CartItems = () => {
-    // const {products, total} = useContext(CartContext)
-          
+          const navigate = useNavigate()
     const cart=()=>{
-          <Cart/>
+        navigate("/cart")
     }
 
   return (
