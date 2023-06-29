@@ -1,6 +1,8 @@
+
 export const initialState = {
+    cartItems: localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : [],
     total: 0,
-    products: []
+    products: [],
 }
 
  const cartReducer =(state,action)=> {
@@ -9,15 +11,19 @@ export const initialState = {
             return {
                 ...state,
                 products: action.payload,
+                cartItems: action.payload,
+
              }
         case "remove":
             return{...state,
                 products: action.payload,
+                cartItems: action.payload,
             }
-            case "update price":
+        case "update price":
                 return {
                     ...state,
-                    total: action.payload
+                    total: action.payload,
+                    cartItems: action.payload,
                 }
             default: throw Error ("cannot match case in reducer")
     }

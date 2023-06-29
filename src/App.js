@@ -14,13 +14,13 @@ function App() {
     <CartProvider>
       
         <Router>
-            <Navbar/>
+              <Navbar/>
             <Routes>
                   <Route path='/' element={<Header/>}/>
-                  <Route path='signup' element={<Signup/>}/>
-                  <Route path='login' element={<Login/>}/>
-                  <Route path='products' element={<Products/>}/>
-                  <Route path='cart' element={<Cart/>}/>
+                  <Route path='/signup' element={<Signup/>}/>
+                  <Route path='/login' element={<Login/>}/>
+                  <Route path='/products' element={<Products/>}/>
+                  <Route path='/cart' element={<Cart/>}/>
             </Routes>
         </Router>
         </CartProvider>

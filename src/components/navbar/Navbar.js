@@ -24,6 +24,34 @@ const Navbar = () => {
             </ul>
          </nav>
             
+         {/* <nav class="navbar navbar-expand-lg ">
+                <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation ">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul className='Navbar'>
+                        <li><img className='image' src={logo} alt="" /></li>
+                        <li>
+                            <Link className="nav-link" >CATALOGUE</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link">FASHION</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link">FAVOURITE</Link>
+                        </li>
+                        <li>
+                            <Link className="nav-link">LIFESTYLE</Link>
+                        </li>
+                        <li className='nav-link'>
+                            <Link className='nav-link btn' to="/signup">SIGN UP</Link>
+                        </li>
+                    </ul>   
+                </div>
+                </div>
+            </nav> */}
 
     </div>
   )

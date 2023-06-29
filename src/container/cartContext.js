@@ -17,6 +17,7 @@ export const CartProvider = ({children}) => {
                 type:"add",
                 payload: updatedCart
             })
+            localStorage.setItem("cartItems", JSON.stringify(state.cartItems))
     } 
     const removeFromCart = (product)=>{
                 const  updatedCart = state.products.filter((currentProduct)=> currentProduct.id !==product.id);
@@ -27,11 +28,9 @@ export const CartProvider = ({children}) => {
                     type:"remove",
                 payload: updatedCart
                 })
+                localStorage.setItem("cartItems", JSON.stringify(state.cartItems))
     }
-    // const quantity = (products)=>{
-    //     let qty = 0
 
-    // }
     const updatePrice = (products)=>{
             let total = 0 ;
             products.forEach(product=>{
@@ -42,7 +41,20 @@ export const CartProvider = ({children}) => {
                 type:"update price",
                 payload: total
             })
+            localStorage.setItem("cartItems", JSON.stringify(state.cartItems))
     }
+
+    // const quantity = (products)=>{
+    //     let qty = 0;
+    //         products.forEach(product=>{
+    //         qty += product.qty
+    //     })
+
+    //     dispatch({
+    //         type: "increase quantity",
+    //         payload: qty
+    //     })
+    // }
 
     const value = {
         total: state.total,
