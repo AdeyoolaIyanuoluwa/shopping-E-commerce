@@ -3,6 +3,7 @@ export const initialState = {
     cartItems: localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")) : [],
     total: 0,
     products: [],
+    count: 0
 }
 
  const cartReducer =(state,action)=> {
@@ -12,7 +13,7 @@ export const initialState = {
                 ...state,
                 products: action.payload,
                 cartItems: action.payload,
-
+                count: action.payload
              }
         case "remove":
             return{...state,

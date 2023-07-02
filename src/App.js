@@ -6,7 +6,7 @@ import Signup from './components/Signup/Signup';
 import Login from './components/Login/login';
 import Products from './pages/Products/products';
 import { CartProvider } from './container/cartContext';
-import Cart from './pages/Products/cart';
+import Cart from './pages/Cart/cart';
 
 function App() {
   return (

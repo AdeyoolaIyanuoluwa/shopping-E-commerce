@@ -7,6 +7,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img1,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -15,6 +16,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -23,6 +25,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -31,6 +34,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img1,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -39,6 +43,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -47,6 +52,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -55,6 +61,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img1,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             },
@@ -63,6 +70,7 @@ import img2 from "../components/Assets/Images/IMG2.png"
                imageUrl: img2,
                productName: "Hoodies & Sweetshirt",
                amount: 20000,
+               updatedAmount: 0,
                quantity: 0
 
             }

@@ -1,13 +1,18 @@
 import { useContext } from 'react';
 import SecondaryButton from '../../components/Button/secondary';
 import { CartContext } from '../../container/cartContext';
+import { ProductData } from '../../Mockdata/productData'
 
-const EachProduct = ({product}) => {
-    const {addToCart} = useContext(CartContext)
+const EachProduct = ({product, index}) => {
+    const {addToCart, products} = useContext(CartContext)
     
-    const addtocart=()=>{
-            addToCart(product)
-    }
+    const addtocart=()=>{ 
+        addToCart({...product, quantity: product.quantity + 1, updatedAmount: product.amount * 
+            (product.quantity + 1)})
+        console.log(product.amount, product.quantity);
+            ProductData[index].quantity = product.quantity + 1    
+            ProductData[index].updatedAmount = product.amount * product.quantity   
+    }        
   return (
     <div>
                  <div className='products'>
@@ -27,7 +32,8 @@ const EachProduct = ({product}) => {
                             </span>
                         
                             <div>
-                                <SecondaryButton addtocart={addtocart} parent="Add to Cart"/>  
+                                <SecondaryButton
+                                 addtocart={addtocart} parent={`Add to Cart ${product.quantity}`}/>  
                              </div>   
                         </div>
                      </div>

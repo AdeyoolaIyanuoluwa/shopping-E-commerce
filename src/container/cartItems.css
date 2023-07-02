@@ -1,13 +1,9 @@
 .cart-icon{
-    /* font-size: 30px; */
-    /* font-weight: 650; */
-    font-family: "poppins" sans-serif;
     background-color: rgb(27, 24, 24);
     color: white;
     width: 145px;
     height: 50px;
     border-radius: 15.75px;
-    /* margin: auto; */
 }
 .basket{
     font-size: 35px;
@@ -16,14 +12,14 @@
     right: 5px;
 }
 .cart-icon:hover{
-    background-color: rgb(136, 131, 131);
+    background-color: rgb(241, 247, 181);
+    /* background-color: rgb(136, 131, 131); */
     color: black;
     border: thin solid white;
 }
 .text-cart{
     font-size: 20px;
     font-weight: 900;
-    font-family: "poppins" sans-serif;
     position: relative;
     bottom: 5px;
 }

@@ -10,11 +10,15 @@ const navigate = useNavigate()
  const shopNow=()=>{
       navigate("/products")
  }
+
+ console.log(products);
+
+
   return (
     <div className='cart-bxx'>
         <div className='cart-box'>
             <h1 className='products-text'>PRODUCTS</h1>
-            <span className='total-price'>Total: ${total}</span>
+            <span className='total-price'>Total: ${total }</span>
         </div>
         
         <div>
@@ -23,7 +27,7 @@ const navigate = useNavigate()
                   <h1>Your cart is currently empty</h1>
                     <PrimaryButton handleSignup={shopNow} children="SHOP NOW"/>
                 </div>}
-                 {products.map((cartitems, i)=> <CartProduct key={i} product={cartitems}/>)} 
+                 {products.map((cartitems, i)=> <CartProduct key={i} product={cartitems} index={i}/>)} 
         </div>
     </div>
   )
