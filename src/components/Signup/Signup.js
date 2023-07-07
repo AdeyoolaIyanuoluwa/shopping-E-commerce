@@ -27,8 +27,7 @@ const Signup = () => {
             e.preventDefault()
             setErrors(Validation(user))
             localStorage.setItem("key", JSON.stringify(user))
-            Object.values(Validation(user))?.length === 0 && navigate("/products")
-                    
+            Object.values(Validation(user))?.length === 0 && navigate("/products")            
         }
 
   return (
@@ -45,7 +44,7 @@ const Signup = () => {
                 {errors.firstname && <p style={{color: "red"}}>{errors.firstname}</p>}
 
                 <Input onChangeinp={handleChange} placeholder="Lastname" name='lastname' value={user.lastname} type='text' />
-                {errors.firstname && <p style={{color: "red"}}>{errors.firstname}</p>}
+                {errors.lastname && <p style={{color: "red"}}>{errors.lastname}</p>}
 
                 <Input onChangeinp={handleChange} placeholder="Email" name='email' value={user.email} type='text' />
                 {errors.email && <p style={{color: "red"}}>{errors.email}</p>}
@@ -53,7 +52,7 @@ const Signup = () => {
                 <Input onChangeinp={handleChange} placeholder="Password" name='password' value={user.password} type='text' />
                 {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
                 <div>
-                    <PrimaryButton children="SIGN UP" type="submit"/>
+                    <PrimaryButton children="SIGN UP" secondary={true} type="submit"/>
                     {/* {message} */}
                 </div>
           </form>

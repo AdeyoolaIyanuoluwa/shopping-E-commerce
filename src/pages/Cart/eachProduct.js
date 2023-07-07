@@ -4,14 +4,17 @@ import { CartContext } from '../../container/cartContext';
 import { ProductData } from '../../Mockdata/productData'
 
 const EachProduct = ({product, index}) => {
-    const {addToCart, products} = useContext(CartContext)
+    const {addToCart} = useContext(CartContext)
     
     const addtocart=()=>{ 
-        addToCart({...product, quantity: product.quantity + 1, updatedAmount: product.amount * 
-            (product.quantity + 1)})
-        console.log(product.amount, product.quantity);
-            ProductData[index].quantity = product.quantity + 1    
-            ProductData[index].updatedAmount = product.amount * product.quantity   
+        addToCart(product)
+        
+        // ++product.quantity
+        //     {...products, quantity: product.quantity + 1, updatedAmount: product.amount * (product.quantity + 1)})
+        // // console.log(product.amount, product.quantity);
+        //     ProductData[index].quantity = product.quantity + 1    
+
+        //     ProductData[index].updatedAmount = product.amount * product.quantity   
     }        
   return (
     <div>

@@ -11,14 +11,15 @@ const navigate = useNavigate()
       navigate("/products")
  }
 
- console.log(products);
+//  console.log(products);
+//  console.log({total,products});
 
 
   return (
     <div className='cart-bxx'>
         <div className='cart-box'>
             <h1 className='products-text'>PRODUCTS</h1>
-            <span className='total-price'>Total: ${total }</span>
+            <span className='total-price'>Total: ${total}</span>
         </div>
         
         <div>

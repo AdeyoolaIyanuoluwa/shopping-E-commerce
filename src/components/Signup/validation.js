@@ -6,11 +6,14 @@ export const Validation = (user)=>{
         if(user.firstname === ""){
             errors.firstname = "*Required"
         }
+        if(user.lastname === ""){
+            errors.lastname = "*Required"
+        }
         if(user.email === ""){
             errors.email = "*Required"
         }
         else if (!email_pattern.test(user.email)){
-            errors.email = "Email does not match"
+            errors.email = "Invalid Email"
         }
         if(user.password === ""){
             errors.password = "*Required"
