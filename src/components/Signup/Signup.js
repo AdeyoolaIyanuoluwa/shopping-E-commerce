@@ -52,7 +52,8 @@ const Signup = () => {
                 <Input onChangeinp={handleChange} placeholder="Password" name='password' value={user.password} type='text' />
                 {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
                 <div>
-                    <PrimaryButton children="SIGN UP" secondary={true} type="submit"/>
+                    <PrimaryButton children="SIGN UP" type="submit"/>
+                    {/* <PrimaryButton children="SIGN UP" secondary={true} type="submit"/> */}
                     {/* {message} */}
                 </div>
           </form>
