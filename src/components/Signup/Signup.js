@@ -20,7 +20,7 @@ const Signup = () => {
             const name = e.target.name;
             const value = e.target.value;
             setUser({...user, [name]: value})
-            setErrors(Validation(user))
+            // setErrors(Validation(user))
         }
 
         const handleSignup=(e)=>{
@@ -51,11 +51,11 @@ const Signup = () => {
 
                 <Input onChangeinp={handleChange} placeholder="Password" name='password' value={user.password} type='text' />
                 {errors.password && <p style={{color: "red"}}>{errors.password}</p>}
-                <div>
+                <center>
                     <PrimaryButton children="SIGN UP" type="submit"/>
                     {/* <PrimaryButton children="SIGN UP" secondary={true} type="submit"/> */}
                     {/* {message} */}
-                </div>
+                </center>
           </form>
         </div>
     </div>
