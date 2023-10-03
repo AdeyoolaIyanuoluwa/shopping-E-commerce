@@ -1,9 +1,9 @@
-import React from "react";
+ import React from "react";
 import "../Input/input.css";
 
 const Input = ({ onChangeinp, name, value, type, placeholder }) => {
   return (
-    <div className="body">
+    <div className="body" data-testid="input">
       <input
         className="inputs"
         onChange={onChangeinp}

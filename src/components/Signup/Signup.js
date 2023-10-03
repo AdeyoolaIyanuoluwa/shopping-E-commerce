@@ -31,7 +31,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" data-testid="container">
       <div>
         <img className="yellow-girl" src={image} alt="" />
       </div>

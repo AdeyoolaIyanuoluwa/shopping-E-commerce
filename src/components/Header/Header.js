@@ -6,7 +6,7 @@ import PrimaryButton from "../Button/primary";
 
 const Header = () => {
   return (
-    <div>
+    <div  data-testid="header">
       <div className="main-box">
         <div className="header-text">
           <h1 className="text1">

@@ -12,14 +12,15 @@ const CartItems = () => {
   };
 
   return (
-    <div>
+    <div data-testid="container">
       <button className="cart-icon" onClick={cart}>
         <span className="basket">
           <AiOutlineShoppingCart />
         </span>
         <span className="text-cart">Cart</span>
         <span className="cart-count">
-          {products.length >= 0 ? `${products.length}` : "0"}
+          {products.length}
+          {/* {products.length > 0 ? `${products.length}` : "0"} */}
         </span>
       </button>
     </div>

@@ -13,7 +13,7 @@ const CartProduct = ({ product, index }) => {
     // ProductData[index].updatedAmount = product.updatedAmount - product.amount
   };
   return (
-    <div className="cart-bx">
+    <div className="cart-bx" data-testid= "product">
       <img
         className="cart-image"
         src={product.imageUrl}

@@ -6,7 +6,7 @@ import EachProduct from "../Cart/eachProduct";
 
 const Products = () => {
   return (
-    <div className="main">
+    <div className="main" data-testid="main">
       <div className="products-mainbox">
         <div className="cart-box">
           <h1 className="products-text">NEW ARRIVALS</h1>

@@ -17,7 +17,7 @@ const EachProduct = ({ product, index }) => {
     //     ProductData[index].updatedAmount = product.amount * product.quantity
   };
   return (
-    <div>
+    <div data-testid="eachproduct">
       <div className="products">
         <div className="product-image">
           <img className="images" src={product.imageUrl} alt="" />
@@ -30,10 +30,11 @@ const EachProduct = ({ product, index }) => {
           <div className="addtocart">
             <span className="product-amount">${product.amount}</span>
 
-            <div>
+            <div >
               <SecondaryButton
                 addtocart={addtocart}
                 parent={`Add to Cart ${product.quantity}`}
+            
               />
             </div>
           </div>

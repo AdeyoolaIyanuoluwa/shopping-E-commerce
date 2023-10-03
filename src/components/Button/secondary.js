@@ -3,8 +3,8 @@ import "../Button/button.css"
 
 const SecondaryButton = ({parent,addtocart}) => {
   return (
-    <div>
-        <button onClick={addtocart} className='secondary-button' >{parent}</button>
+    <div >
+        <button onClick={addtocart} className='secondary-button' data-testid="btn">{parent}</button>
     </div>
   )
 }

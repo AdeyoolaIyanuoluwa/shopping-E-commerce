@@ -7,7 +7,7 @@ const PrimaryButton = ({ children, handleSignup, secondary }) => {
       <button
         className={secondary ? "secondary-button" : "primary-button"}
         onClick={handleSignup}
-      >
+        data-testid="btn">
         {children}
       </button>
     </div>

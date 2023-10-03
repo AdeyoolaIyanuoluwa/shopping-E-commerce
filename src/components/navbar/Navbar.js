@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div data-testid="navbar">
       <nav>
         <ul className="Navbar">
           <li>
