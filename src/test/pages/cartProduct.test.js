@@ -7,7 +7,14 @@ describe('cart products', ()=>{
 it('renders cart products',()=>{
     render(
         <CartProvider>
-            <CartProduct product/>
+            <CartProduct product={{
+                 imageUrl: 'https://sdfsdfsdf',
+                 id: 1,
+                 productName: "Hoodies & Sweetshirt",
+                 amount: 20000,
+                 updatedAmount: 0,
+                 quantity: 0, 
+            }} />
         </CartProvider>
     )
     const cartProduct = screen.getByTestId('product')
